@@ -4,7 +4,7 @@ const SignButton = props => {
   return (
     <>
       <button
-        // onClick={() => props.addNumber(props.sign)}
+        onClick={props.changeDate}
         className="sign-btn"
         id={`sign-btn-${props.sign.name}`}
       >

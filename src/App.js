@@ -10,25 +10,28 @@ function App() {
 
   const [date, updateDate] = useState("2019-08-27");
 
-  useEffect(() => {
-    function randomDate() {
-      let year = Math.floor(Math.random() * 19 + 2000);
-      let month = Math.floor(Math.random() * 12 + 1);
-      let day = Math.floor(Math.random() * 28 + 1);
+  const randomDate = () => {
+    let year = Math.floor(Math.random() * 19 + 2000);
+    let month = Math.floor(Math.random() * 12 + 1);
+    let day = Math.floor(Math.random() * 28 + 1);
 
-      if (month < 10) {
-        month = `0${month}`;
-      } else if (day < 10) {
-        day = `0${day}`;
-      }
-
-      return `${year}-${month}-${day}`;
+    if (month < 10) {
+      month = `0${month}`;
+    } else if (day < 10) {
+      day = `0${day}`;
     }
 
-    const newDate = randomDate();
-    // console.log(newDate);
+    return `${year}-${month}-${day}`;
+  };
 
-    updateDate(newDate);
+  let changeDate = event => {
+    event.preventDefault();
+    console.log(event.target);
+    updateDate(randomDate());
+  };
+
+  useEffect(() => {
+    updateDate(randomDate());
   }, []);
 
   useEffect(() => {
@@ -49,7 +52,7 @@ function App() {
     <div className="App">
       <h1>NASA x Zodiac</h1>
       <h2>Choose your sign:</h2>
-      <Signs />
+      <Signs changeDate={changeDate} />
       <APODCard
         url={data.url}
         title={data.title}
