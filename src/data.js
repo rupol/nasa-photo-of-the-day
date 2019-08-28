@@ -5,7 +5,7 @@ export const signs = [
     dayBegin: "20",
     monthEnd: "02",
     dayEnd: "18",
-    img: "../Images/aquarius.png"
+    img: "./images/aquarius.png"
   },
   {
     name: "Pisces",
@@ -13,7 +13,7 @@ export const signs = [
     dayBegin: "19",
     monthEnd: "03",
     dayEnd: "20",
-    img: "./Images/pisces.png"
+    img: "./images/aquarius.png"
   },
   {
     name: "Aries",
