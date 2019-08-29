@@ -1,13 +1,33 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
+import styled from "styled-components";
 
 import APODCard from "./Components/APODCard";
 import Signs from "./Components/Signs";
 
+// STYLING
+const APODApp = styled.div`
+  text-align: center;
+  color: white;
+  font-family: "Gayathri", sans-serif;
+  font-size: 16px;
+`;
+
+const MainHeader = styled.h1`
+  font-family: "Bungee Shade", cursive;
+  font-size: 120px;
+  line-height: 125px;
+  margin-bottom: 30px;
+`;
+
+const SubHeader = styled.h2`
+  font-family: "Bungee Shade", cursive;
+  font-size: 30px;
+`;
+
 function App() {
   const [data, setData] = useState({});
-
   const [date, updateDate] = useState("2019-08-27");
 
   const randomDate = () => {
@@ -30,9 +50,9 @@ function App() {
     updateDate(randomDate());
   };
 
-  useEffect(() => {
-    updateDate(randomDate());
-  }, []);
+  // useEffect(() => {
+  //   updateDate(randomDate());
+  // }, []);
 
   useEffect(() => {
     axios
@@ -49,9 +69,9 @@ function App() {
   }, [date]);
 
   return (
-    <div className="App">
-      <h1>NASA x Zodiac</h1>
-      <h2>Choose your sign:</h2>
+    <APODApp>
+      <MainHeader>NASA x Zodiac</MainHeader>
+      <SubHeader>Choose your sign:</SubHeader>
       <Signs changeDate={changeDate} />
       <APODCard
         url={data.url}
@@ -59,7 +79,7 @@ function App() {
         date={data.date}
         explanation={data.explanation}
       />
-    </div>
+    </APODApp>
   );
 }
 
