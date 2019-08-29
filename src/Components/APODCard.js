@@ -21,7 +21,7 @@ const Title = styled.h2`
 `;
 
 const Date = styled.p`
-  color: #b1b1b1;
+  color: #8daed9;
   font-size: 2.2rem;
   margin-bottom: 10px;
 `;
@@ -29,6 +29,7 @@ const Date = styled.p`
 const Explanation = styled.p`
   max-width: 800px;
   margin: 0 auto;
+  line-height: 2.2rem;
 `;
 
 function APODCard(props) {

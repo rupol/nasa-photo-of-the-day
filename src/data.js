@@ -1,3 +1,16 @@
+import aquarius from "./images/aquarius.png";
+import pisces from "./images/pisces.png";
+import aries from "./images/aries.png";
+import taurus from "./images/taurus.png";
+import gemini from "./images/gemini.png";
+import cancer from "./images/cancer.png";
+import leo from "./images/leo.png";
+import virgo from "./images/virgo.png";
+import libra from "./images/libra.png";
+import scorpio from "./images/scorpio.png";
+import sagittarius from "./images/sagittarius.png";
+import capricorn from "./images/capricorn.png";
+
 export const signs = [
   {
     name: "Aquarius",
@@ -5,7 +18,7 @@ export const signs = [
     dayBegin: "20",
     monthEnd: "02",
     dayEnd: "18",
-    img: "./images/aquarius.png"
+    img: aquarius
   },
   {
     name: "Pisces",
@@ -13,7 +26,7 @@ export const signs = [
     dayBegin: "19",
     monthEnd: "03",
     dayEnd: "20",
-    img: "./images/aquarius.png"
+    img: pisces
   },
   {
     name: "Aries",
@@ -21,7 +34,7 @@ export const signs = [
     dayBegin: "21",
     monthEnd: "04",
     dayEnd: "19",
-    img: "./Images/pisces.png"
+    img: aries
   },
   {
     name: "Taurus",
@@ -29,7 +42,7 @@ export const signs = [
     dayBegin: "20",
     monthEnd: "05",
     dayEnd: "20",
-    img: "./Images/pisces.png"
+    img: taurus
   },
   {
     name: "Gemini",
@@ -37,7 +50,7 @@ export const signs = [
     dayBegin: "21",
     monthEnd: "06",
     dayEnd: "20",
-    img: "./Images/pisces.png"
+    img: gemini
   },
   {
     name: "Cancer",
@@ -45,7 +58,7 @@ export const signs = [
     dayBegin: "21",
     monthEnd: "07",
     dayEnd: "22",
-    img: "./Images/pisces.png"
+    img: cancer
   },
   {
     name: "Leo",
@@ -53,7 +66,7 @@ export const signs = [
     dayBegin: "23",
     monthEnd: "08",
     dayEnd: "22",
-    img: "./Images/pisces.png"
+    img: leo
   },
   {
     name: "Virgo",
@@ -61,7 +74,7 @@ export const signs = [
     dayBegin: "23",
     monthEnd: "09",
     dayEnd: "22",
-    img: "./Images/pisces.png"
+    img: virgo
   },
   {
     name: "Libra",
@@ -69,7 +82,7 @@ export const signs = [
     dayBegin: "23",
     monthEnd: "10",
     dayEnd: "22",
-    img: "./Images/pisces.png"
+    img: libra
   },
   {
     name: "Scorpio",
@@ -77,7 +90,7 @@ export const signs = [
     dayBegin: "23",
     monthEnd: "11",
     dayEnd: "21",
-    img: "./Images/pisces.png"
+    img: scorpio
   },
   {
     name: "Sagittarius",
@@ -85,7 +98,7 @@ export const signs = [
     dayBegin: "22",
     monthEnd: "12",
     dayEnd: "21",
-    img: "./Images/pisces.png"
+    img: sagittarius
   },
   {
     name: "Capricorn",
@@ -93,6 +106,6 @@ export const signs = [
     dayBegin: "22",
     monthEnd: "01",
     dayEnd: "19",
-    img: "./Images/pisces.png"
+    img: capricorn
   }
 ];

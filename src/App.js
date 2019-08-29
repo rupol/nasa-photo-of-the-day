@@ -12,7 +12,7 @@ const Container = styled.div`
   max-width: 1200px;
   text-align: center;
   color: white;
-  font-family: "Gayathri", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.8rem;
 `;
 
@@ -21,10 +21,10 @@ const MainHeader = styled.h1`
   font-size: 12rem;
   line-height: 14rem;
   margin: 6rem 2% 5rem;
+  color: #8daed9;
 `;
 
 const SubHeader = styled.h2`
-  font-family: "Bungee Shade", cursive;
   font-size: 3.5rem;
   margin: 0 2% 2rem;
 `;
@@ -74,7 +74,7 @@ function App() {
   return (
     <Container>
       <MainHeader>NASA x Zodiac</MainHeader>
-      <SubHeader>Choose your sign:</SubHeader>
+      <SubHeader>Choose a sign:</SubHeader>
       <Signs changeDate={changeDate} />
       <APODCard
         url={data.url}
