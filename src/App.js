@@ -7,23 +7,26 @@ import APODCard from "./Components/APODCard";
 import Signs from "./Components/Signs";
 
 // STYLING
-const APODApp = styled.div`
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 1200px;
   text-align: center;
   color: white;
   font-family: "Gayathri", sans-serif;
-  font-size: 16px;
+  font-size: 1.8rem;
 `;
 
 const MainHeader = styled.h1`
   font-family: "Bungee Shade", cursive;
-  font-size: 120px;
-  line-height: 125px;
-  margin-bottom: 30px;
+  font-size: 12rem;
+  line-height: 14rem;
+  margin: 6rem 2% 5rem;
 `;
 
 const SubHeader = styled.h2`
   font-family: "Bungee Shade", cursive;
-  font-size: 30px;
+  font-size: 3.5rem;
+  margin: 0 2% 2rem;
 `;
 
 function App() {
@@ -69,7 +72,7 @@ function App() {
   }, [date]);
 
   return (
-    <APODApp>
+    <Container>
       <MainHeader>NASA x Zodiac</MainHeader>
       <SubHeader>Choose your sign:</SubHeader>
       <Signs changeDate={changeDate} />
@@ -79,7 +82,7 @@ function App() {
         date={data.date}
         explanation={data.explanation}
       />
-    </APODApp>
+    </Container>
   );
 }
 

@@ -4,25 +4,26 @@ import styled from "styled-components";
 // STYLING
 const Card = styled.div`
   border: 10px double #ac70b2;
-  width: 900px;
-  padding: 75px 50px;
+  max-width: 1000px;
+  padding: 75px 75px;
   margin: 10px auto 100px;
 `;
 
 const Image = styled.img`
-  max-width: 800px;
-  max-height: 800px;
+  width: 100%;
+  height: auto;
 `;
 
 const Title = styled.h2`
-  font-size: 36px;
+  font-size: 4rem;
   color: #ac70b2;
-  line-height: 36px;
+  margin: 30px 0 20px;
 `;
 
 const Date = styled.p`
   color: #b1b1b1;
-  font-size: 20px;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
 `;
 
 const Explanation = styled.p`
