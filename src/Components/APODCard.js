@@ -2,12 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 // STYLING
-const Card = styled.div`
-  border: 10px double #ac70b2;
-  max-width: 1000px;
-  padding: 75px 75px;
-  margin: 10px auto 100px;
-`;
 
 const Image = styled.img`
   width: 100%;
@@ -34,12 +28,12 @@ const Explanation = styled.p`
 
 function APODCard(props) {
   return (
-    <Card>
+    <div>
       <Image src={props.url} alt="Sign APOD" />
       <Title>{props.title}</Title>
       <Date>DATE: {props.date}</Date>
       <Explanation>{props.explanation}</Explanation>
-    </Card>
+    </div>
   );
 }
 
