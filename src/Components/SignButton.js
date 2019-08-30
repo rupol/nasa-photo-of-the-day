@@ -28,7 +28,10 @@ const ButtonImg = styled.img`
 const SignButton = props => {
   return (
     <>
-      <Button onClick={props.changeDate} id={`sign-btn-${props.sign.name}`}>
+      <Button
+        onClick={() => props.changeDate(props.sign.name)}
+        id={`sign-btn-${props.sign.name}`}
+      >
         <ButtonImg src={props.sign.img} />
         <br></br>
         {props.sign.name}
