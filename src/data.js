@@ -1,15 +1,15 @@
-import aquarius from "./images/aquarius.png";
-import pisces from "./images/pisces.png";
-import aries from "./images/aries.png";
-import taurus from "./images/taurus.png";
-import gemini from "./images/gemini.png";
-import cancer from "./images/cancer.png";
-import leo from "./images/leo.png";
-import virgo from "./images/virgo.png";
-import libra from "./images/libra.png";
-import scorpio from "./images/scorpio.png";
-import sagittarius from "./images/sagittarius.png";
-import capricorn from "./images/capricorn.png";
+import aquarius from "./Images/aquarius.png";
+import pisces from "./Images/pisces.png";
+import aries from "./Images/aries.png";
+import taurus from "./Images/taurus.png";
+import gemini from "./Images/gemini.png";
+import cancer from "./Images/cancer.png";
+import leo from "./Images/leo.png";
+import virgo from "./Images/virgo.png";
+import libra from "./Images/libra.png";
+import scorpio from "./Images/scorpio.png";
+import sagittarius from "./Images/sagittarius.png";
+import capricorn from "./Images/capricorn.png";
 
 export const signs = [
   {

@@ -17,12 +17,21 @@ const Button = styled.button`
     outline: none;
     color: white;
   }
+  @media (max-width: 650px) {
+    font-size: 1.4rem;
+    color: white;
+    margin: 5px;
+  }
 `;
 
 const ButtonImg = styled.img`
   width: 120px;
   border-radius: 80px;
   margin: 10px 10px -55px;
+  @media (max-width: 650px) {
+    width: 60px;
+    margin: 0;
+  }
 `;
 
 const SignButton = props => {

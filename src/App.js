@@ -24,6 +24,9 @@ const MainHeader = styled.h1`
   line-height: 14rem;
   margin: 6rem 2% 5rem;
   color: #8daed9;
+  @media (max-width: 650px) {
+    font-size: 7.5rem;
+  }
 `;
 
 const SubHeader = styled.h2`
@@ -37,6 +40,11 @@ const CardContainer = styled.div`
   min-height: 800px
   padding: 75px 75px;
   margin: 10px auto 100px;
+  @media (max-width: 650px) {
+    border: none;
+    max-width: 100%;
+    padding: 10px;
+  }
 `;
 
 function App() {
@@ -144,7 +152,7 @@ function App() {
       <Signs changeDate={changeDate} />
       <CardContainer>
         {loading === true ? (
-          <Loader type="Triangle" color="#ac70b2" height={500} width={500} />
+          <Loader type="Triangle" color="#ac70b2" height={375} width={375} />
         ) : (
           <APODCard
             url={data.url}
